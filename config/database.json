@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "gftadmin",
+    "password": "dsfjknbalsduhfadaer",
+    "database": "demodb",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "gftadmin",
+    "password": "dsfjknbalsduhfadaer",
+    "database": "demodb",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "gftadmin",
+    "password": "dsfjknbalsduhfadaer",
+    "database": "demodb",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
