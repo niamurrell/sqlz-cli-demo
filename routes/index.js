@@ -7,16 +7,20 @@ module.exports = (app) => {
 		message: 'Welcome to the Todos API!',
 	}));
 
-	app.post('/api/todos', todosController.create);
-
 	app.get('/api/todos', todosController.list);
 
-	app.post('/api/todos/:todoId/items', todoItemsController.create);
+	app.post('/api/todos', todosController.create);
 
 	app.get('/api/todos/:todoId', todosController.retrieve);
 
 	app.put('/api/todos/:todoId', todosController.update);
 
 	app.delete('/api/todos/:todoId', todosController.destroy);
+
+	app.post('/api/todos/:todoId/items', todoItemsController.create);
+
+	app.put('/api/todos/:todoId/items/:todoItemId', todoItemsController.update);
+
+	app.delete('/api/todos/:todoId/items/:todoItemId', todoItemsController.destroy);
 
 };
